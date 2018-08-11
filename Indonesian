@@ -1,0 +1,15 @@
+IOT Pelacakan Aset menggunakan Hyperledger Blockchain
+pengantar
+Repositori ini berisi tiga bagian yang menyusun perangkat Pelacak Aset IoT , Hyperledger Blockchain , dan Dasbor Node-REDuntuk mengimplementasikan rantai pasokan jaringan yang mudah rusak. Contoh ini dapat digunakan untuk melacak kondisi lingkungan untuk rantai pasokan keamanan pangan, persediaan medis yang didinginkan, pengiriman tanaman kebun atau pengiriman yang mudah rusak yang suhu / kelembaban / getaran / waktu sensitif. Jika kargo harus dikirim dalam parameter lingkungan yang aman dan waktu, penggunaan perangkat Pelacak Aset IoT yang menggabungkan sensor lingkungan, menghitung lokasinya melalui GPS, triangulasi atau suar, dan kemudian melaporkan lokasinya melalui Seluler, 5G, Sub1GHz, SigFox , Jaringan WiFi sangat berharga. Ketika beberapa peserta - pertanian, pabrik, pabrik pengolahan, truk, pelabuhan, kapal, pusat distribusi, gerai ritel konsumen - terlibat dalam pengiriman dan pembayaran kargo yang aman,
+
+Bengkel
+Saya telah mengatur repositori git ini untuk dibaca sebagai tutorial lokakarya Pola Kode IBM . Ikuti langkah-langkah di direktori Lokakarya untuk mempelajari cara membangunnya sendiri!
+
+Bagian Ikhtisar
+Pertama bagian rincian bagaimana untuk mendirikan sebuah partikel elektron Aset Tracker v2 untuk mengirim data sensor lingkungan dan lokasi ke awan. Implementasi ini menggunakan Particle Electron tetapi banyak perangkat IOT Asset Tracking lain yang dapat mengirimkan lokasi dan data dapat digantikan dengan hasil yang serupa. Revisi selanjutnya dari tutorial workshop ini akan menambah papan IOT Asset Tracking lainnya jadi periksa kembali di masa depan.
+
+Kedua bagian mengimplementasikan tahan lama Jaringan Bisnis menggunakan Hyperledger Fabric, Hyperledger Komposer, Hyperledger Komposer SISA API berjalan di IBM Cloud Wadah Layanan dikelola oleh klaster Kubernetes di IBM Cloud.
+
+Dalam ketiga bagian , kekuatan Dimana, Apa dan Kapan sebaiknya divisualisasikan dalam dashboard yang plot jalur lokasi geo, data sensor lingkungan dan dapat mengontrol pemicu dan alert. Saya menggunakan server Node-RED dan Node.js yang berjalan dalam aplikasi Cloud Foundry Cloud yang dihosting Cloud untuk menerima data Pelacakan Aset IoT dan menulisnya ke Kain Hyperledger menggunakan Hyperledger Composer REST APIs. Saya juga menggunakan Node-RED Dashboard untuk memetakan pengiriman di peta.
+
+Nikmati! Beri saya umpan balik jika Anda memiliki saran tentang cara meningkatkan tutorial ini.
